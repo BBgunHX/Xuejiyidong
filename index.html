@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄霄 - 个人简历</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">黄霄的简历</div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#projects" class="nav-link">项目经验</a></li>
+                <li><a href="#experience" class="nav-link">工作经历</a></li>
+                <li><a href="#skills" class="nav-link">技能特长</a></li>
+                <li><a href="#contact" class="nav-link">联系方式</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">你好，我是 <span class="highlight">黄霄</span></h1>
+                <p class="hero-subtitle">AI智能体开发工程师 | 硕士研究生</p>
+                <p class="hero-description">专注于智能体应用开发、RAG技术、自动化工具设计</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">查看项目</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>黄霄</h3>
+                        <p>汉族 | 男</p>
+                        <p>1996.08.25</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>教育背景</h3>
+                    <p><strong>石河子大学（211）</strong></p>
+                    <p>硕士研究生</p>
+                    <p>2023.01 - 2025.07</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-language"></i>
+                    <h3>语言能力</h3>
+                    <p>英语 CET-6</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>个人特质</h3>
+                    <p>性格乐观，韧性较强，不惧怕困难</p>
+                    <p>有创造性，能针对问题提出新颖有效的解决方案</p>
+                    <p>对AI有如信仰般的热情，行动力强</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-music"></i>
+                    <h3>兴趣爱好</h3>
+                    <p>音乐 - 曾担任乐队主唱</p>
+                    <p>游泳、健身</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title">项目经验</h2>
+            
+            <!-- 项目分类导航 -->
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="education">教育机构</button>
+                <button class="filter-btn" data-filter="media">自媒体</button>
+                <button class="filter-btn" data-filter="ecommerce">电商</button>
+                <button class="filter-btn" data-filter="construction">施工管理</button>
+                <button class="filter-btn" data-filter="medical">医疗</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- 教育机构项目 -->
+                <div class="project-card" data-category="education">
+                    <div class="project-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>自动化作业检查系统</h3>
+                    <p class="project-tag">教育机构</p>
+                    <p class="project-desc">音频/文本双通道评估、智能成绩记录与查询。基于RAG准确度评估，timeline分析流畅度，SQL实现成绩管理。</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-chart-line"></i> 准确率 90%+</span>
+                        <span><i class="fas fa-clock"></i> 节省时间 70%</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>RAG</span>
+                        <span>Timeline分析</span>
+                        <span>SQL</span>
+                        <span>API管理</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="education">
+                    <div class="project-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>岩石识别辅助教学工具</h3>
+                    <p class="project-tag">教育机构</p>
+                    <p class="project-desc">为中学地理课程开发，支持拍照识别岩石类型并生成科普知识。训练小模型封装为独立应用（CNN+Tkinter）。</p>
+                    <div class="tech-stack">
+                        <span>CNN</span>
+                        <span>图像识别</span>
+                        <span>Tkinter</span>
+                        <span>知识库</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="education">
+                    <div class="project-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>公务信息查询云应用</h3>
+                    <p class="project-tag">教育机构</p>
+                    <p class="project-desc">为教育行政部门开发，实现学籍异动材料的智能检索与文档管理。基于RAG技术，大模型自动改写模糊查询。</p>
+                    <div class="tech-stack">
+                        <span>RAG</span>
+                        <span>LLM</span>
+                        <span>GitHub集成</span>
+                        <span>多页面跳转</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="education">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>学术写作辅助系统</h3>
+                    <p class="project-tag">教育机构</p>
+                    <p class="project-desc">本地部署Qwen2-7B+FAISS向量数据库RAG架构。支持8种格式解析，智能问答+数据分析模块。</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-bolt"></i> 延迟 &lt;100ms</span>
+                        <span><i class="fas fa-check"></i> 成功率 95%+</span>
+                        <span><i class="fas fa-clock"></i> 节省时间 60%</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Ollama</span>
+                        <span>Qwen2-7B</span>
+                        <span>FAISS</span>
+                        <span>RAG</span>
+                    </div>
+                </div>
+
+                <!-- 自媒体项目 -->
+                <div class="project-card" data-category="media">
+                    <div class="project-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>全流程视频生成系统</h3>
+                    <p class="project-tag">自媒体</p>
+                    <p class="project-desc">支持多题材全流程视频生成。多入口模式，智能分镜配图，时间线精确控制（音频拼接+字幕分割+封面偏移）。</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-rocket"></i> 效率提升 80%</span>
+                        <span><i class="fas fa-video"></i> 月产 200+ 条</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>智能分镜</span>
+                        <span>Timeline控制</span>
+                        <span>音频处理</span>
+                        <span>字幕算法</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="media">
+                    <div class="project-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>网文改编视频工具</h3>
+                    <p class="project-tag">自媒体</p>
+                    <p class="project-desc">支持原创/续写/改写三种模式。完整前端交互流程：文案处理→数据绑定→组件控制→视频生成。</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-check"></i> 审核通过率 92%</span>
+                        <span><i class="fas fa-calendar-day"></i> 日均 20+ 条</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Markdown</span>
+                        <span>Lottie动画</span>
+                        <span>数据绑定</span>
+                        <span>自动化生产</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="media">
+                    <div class="project-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>灵感管理与内容生产工具</h3>
+                    <p class="project-tag">自媒体</p>
+                    <p class="project-desc">为公众号创作者开发，实现灵感记录→主题预测→文章生成→配图发布全流程。SQL+RAG技术构建写作辅助。</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-chart-line"></i> 灵感利用率 +60%</span>
+                        <span><i class="fas fa-clock"></i> 生成效率 +70%</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>SQL</span>
+                        <span>RAG</span>
+                        <span>趋势分析</span>
+                        <span>智能配图</span>
+                    </div>
+                </div>
+
+                <!-- 电商项目 -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>直播话术安全审核工具</h3>
+                    <p class="project-tag">电商</p>
+                    <p class="project-desc">自动识别并替换敏感词。多层审核机制：代码分块→多模型串联→智能替换→二次润色。</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-check-double"></i> 检出率 98%+</span>
+                        <span><i class="fas fa-exclamation-triangle"></i> 误报率 &lt;5%</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>多模型串联</span>
+                        <span>语义分析</span>
+                        <span>智能替换</span>
+                        <span>合规性验证</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>服装广告视频生成平台（规划）</h3>
+                    <p class="project-tag">电商</p>
+                    <p class="project-desc">基于Sora API的自动生成平台。商品图与场景描述结合，实现低成本批量高质量模特展示视频。</p>
+                    <div class="tech-stack">
+                        <span>Sora API</span>
+                        <span>场景描述</span>
+                        <span>批量生产</span>
+                        <span>成本优化</span>
+                    </div>
+                </div>
+
+                <!-- 施工管理项目 -->
+                <div class="project-card" data-category="construction">
+                    <div class="project-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>施工进度管理与智能分析系统</h3>
+                    <p class="project-tag">施工管理</p>
+                    <p class="project-desc">为风电工程开发，实现三级权限管理、12阶段工期算法、AI对话查询。支持多地点并行管理。</p>
+                    <div class="tech-stack">
+                        <span>三级权限</span>
+                        <span>工期算法</span>
+                        <span>火山数据库</span>
+                        <span>AI对话</span>
+                    </div>
+                </div>
+
+                <!-- 医疗项目 -->
+                <div class="project-card" data-category="medical">
+                    <div class="project-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>白血病FCS数据分析智能体</h3>
+                    <p class="project-tag">医疗</p>
+                    <p class="project-desc">使用Qwen-Agent框架开发，通过Function Calling实现自然语言驱动的FCS文件处理、格式转换、可视化完整流程。</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-chart-line"></i> 效率提升 60%</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Qwen-Agent</span>
+                        <span>Function Calling</span>
+                        <span>CLI/WebUI</span>
+                        <span>医疗领域</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">工作经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025.09 - 至今</span>
+                        <h3>智能体开发人员（兼职）</h3>
+                        <p class="company">深圳智慧创思有限公司</p>
+                        <p>独立完成智能体开发项目若干</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024.10 - 2024.12</span>
+                        <h3>实习生</h3>
+                        <p class="company">新疆西睿智能科技有限公司</p>
+                        <p>负责自动驾驶模型的训练数据标注</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024.08 - 2024.10</span>
+                        <h3>实习生</h3>
+                        <p class="company">新疆石河子市第二人民医院</p>
+                        <p>完成医疗数据分析相关的软件设计</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023.01 - 2025.07</span>
+                        <h3>硕士研究生</h3>
+                        <p class="company">石河子大学</p>
+                        <p>从事自动诊断相关项目研究</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021.05 - 2022.05</span>
+                        <h3>疾控工作人员</h3>
+                        <p class="company">四川省泸州市纳溪疾控中心</p>
+                        <p>负责免疫规划及疫情消杀工作</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">技能特长</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI技术</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>RAG技术</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>大语言模型应用</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Function Calling</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>向量数据库</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> 开发技能</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>智能体开发</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>API集成</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>前端开发</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> 数据处理</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>SQL数据库</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>数据分析</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>文档解析</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>音视频处理</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> 机器学习</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>深度学习</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>卷积神经网络</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 83%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>图像识别</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>模型训练</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 竞赛成就 -->
+            <div class="achievements">
+                <h3><i class="fas fa-trophy"></i> AI竞赛成就</h3>
+                <div class="achievement-tags">
+                    <span class="achievement-tag">Kaggle 奖牌获得者</span>
+                    <span class="achievement-tag">计挑赛 名次靠前</span>
+                    <span class="achievement-tag">百度飞桨 证书获得者</span>
+                    <span class="achievement-tag">阿里天池 名次靠前</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p><a href="mailto:916905388@qq.com">916905388@qq.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>电话</h4>
+                            <p><a href="tel:18011027803">180 1102 7803</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>期望工作地点</h4>
+                            <p>不限（可远程）</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <h3>期待与您合作</h3>
+                    <p>如果您对我的经历感兴趣，欢迎通过以上方式联系我</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:916905388@qq.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> 发送邮件
+                        </a>
+                        <button class="btn btn-secondary" onclick="window.print()">
+                            <i class="fas fa-download"></i> 下载简历
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 黄霄. All rights reserved.</p>
+            <p>专注AI智能体开发，用技术创造价值</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
